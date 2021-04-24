@@ -1,0 +1,25 @@
+<mat-accordion>
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header collapsedHeight="60px">
+      <mat-panel-title class="panelTitle"> Sobre Esse Projeto </mat-panel-title>
+      <mat-panel-description class="panelTitle">
+        Clique para mais informações
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p class="panelText">
+      Projeto criado para a aula prática de Angular-SPA no curso da Avanade.<br /><br />
+      {{ primeiro }} <br /><br />
+      {{ segundo }} <br /><br />
+      {{ terceiro }}
+      {{ terceiro2 }} <br /><br />
+      {{ quarto }} <br /><br />
+      {{ quinto }}
+      <a href="https://angular-projeto02.vercel.app/" target="_blank"
+        >Link Projeto</a
+      >
+    </p>
+  </mat-expansion-panel>
+</mat-accordion>
